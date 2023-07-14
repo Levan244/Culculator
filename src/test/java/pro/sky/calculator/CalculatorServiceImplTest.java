@@ -18,6 +18,7 @@ public class CalculatorServiceImplTest {
     Assertions.assertEquals(5, result);
 
     }
+
     @Test
     public void shouldPlus() {
         int result = calculatorService.plus(5, 5);
