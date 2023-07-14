@@ -18,6 +18,29 @@ public class CalculatorServiceImplTest {
     Assertions.assertEquals(5, result);
 
     }
+    @Test
+    public void shouldPlus() {
+        int result = calculatorService.plus(5, 5);
+        Assertions.assertEquals(10,result);
+    }
+
+    @Test
+    public void shouldMinus() {
+        int result = calculatorService.minus(5, 5);
+        Assertions.assertEquals(0,result);
+    }
+
+    @Test
+    public void shouldMultiplay() {
+        int result = calculatorService.multiplay(5, 5);
+        Assertions.assertEquals(25, result);
+    }
+
+    @Test
+    public void shouldDivide() {
+        int result = calculatorService.divide(5, 5);
+        Assertions.assertEquals(1, result);
+    }
 @Test
     public void shouldThrowExceptionWhenDivideBy0() {
         Assertions.assertThrows(Exception.class, () ->calculatorService.divide(10, 0));
